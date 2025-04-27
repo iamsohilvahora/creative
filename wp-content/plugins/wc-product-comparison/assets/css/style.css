@@ -1,0 +1,61 @@
+.wpc-compare-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    max-height: 80vh; /* Set maximum height */
+    overflow: hidden; /* Prevent overall overflow */
+}
+
+.wpc-popup-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%; /* Ensure content fits inside */
+}
+
+.wpc-close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.wpc-compare-list {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 60vh; /* Set max height for scrolling */
+    padding-right: 10px;
+}
+
+.wpc-product {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wpc-product img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.wpc-remove-product {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
